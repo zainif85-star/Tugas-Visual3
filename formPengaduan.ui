@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <widget class="QPushButton" name="btnHapus">
+   <property name="geometry">
+    <rect>
+     <x>240</x>
+     <y>150</y>
+     <width>56</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Hapus</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="formLayoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>20</y>
+     <width>160</width>
+     <height>113</height>
+    </rect>
+   </property>
+   <layout class="QFormLayout" name="formLayout">
+    <item row="0" column="0">
+     <widget class="QLabel" name="idPengaduanLabel">
+      <property name="text">
+       <string>Id Pengaduan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QLineEdit" name="EditId"/>
+    </item>
+    <item row="1" column="0">
+     <widget class="QLabel" name="divisiLabel">
+      <property name="text">
+       <string>Divisi</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QComboBox" name="ComboDivisi">
+      <item>
+       <property name="text">
+        <string>Pelayanan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Infrastruktur</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Kebersihan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Keamanan</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sosial</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+    <item row="2" column="0">
+     <widget class="QLabel" name="tanggalLabel">
+      <property name="text">
+       <string>Tanggal</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QDateEdit" name="EditTanggal"/>
+    </item>
+    <item row="3" column="0">
+     <widget class="QLabel" name="keteranganLabel">
+      <property name="text">
+       <string>Keterangan</string>
+      </property>
+     </widget>
+    </item>
+    <item row="3" column="1">
+     <widget class="QLineEdit" name="EditKeterangan"/>
+    </item>
+    <item row="4" column="0">
+     <widget class="QLabel" name="statusLabel">
+      <property name="text">
+       <string>Status</string>
+      </property>
+     </widget>
+    </item>
+    <item row="4" column="1">
+     <widget class="QComboBox" name="ComboStatus">
+      <item>
+       <property name="text">
+        <string>Diterima</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Ditolak</string>
+       </property>
+      </item>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QPushButton" name="btnSimpan">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>150</y>
+     <width>56</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Simpan</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btnUbah">
+   <property name="geometry">
+    <rect>
+     <x>160</x>
+     <y>150</y>
+     <width>56</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Ubah</string>
+   </property>
+  </widget>
+  <widget class="QTableWidget" name="tabelAnggota">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>190</y>
+     <width>361</width>
+     <height>81</height>
+    </rect>
+   </property>
+   <column>
+    <property name="text">
+     <string>Id Pengaduan</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Divisi</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Tanggal</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Keterangan</string>
+    </property>
+   </column>
+   <column>
+    <property name="text">
+     <string>Status</string>
+    </property>
+   </column>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
